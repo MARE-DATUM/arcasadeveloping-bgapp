@@ -1,0 +1,127 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ]
+    },
+    "firecrawl": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "firecrawl-mcp"
+      ],
+      "env": {
+        "FIRECRAWL_API_KEY": "fc-3c7338d240e54066a1d57b317c1afa0b"
+      }
+    },
+    "shadcn": {
+      "command": "npx",
+      "args": ["shadcn@latest", "mcp"]
+    },
+    "igniter": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@igniter-js/mcp-server@latest"
+      ],
+      "env": {
+        "GITHUB_TOKEN": "ghp_ZP7f4t30KXxV9fWUj4oUO77085VZv2gYKU7L"
+      }    
+    },
+    "browsermcp": {
+      "command": "npx",
+      "args": ["@browsermcp/mcp@latest"]
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
+    },
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "ghp_ZP7f4t30KXxV9fWUj4oUO77085VZv2gYKU7L"
+      }
+    },
+    "marinetraffic": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "marinetraffic-mcp-server@latest"
+      ],
+      "env": {
+        "MARINETRAFFIC_API_KEY": "YOUR_MARINETRAFFIC_API_KEY"
+      }
+    },
+    "spec-kit": {
+      "command": "node",
+      "args": [
+        "/Users/marconadas/documents/code/spec-kit/mcp-server.js"
+      ],
+      "env": {
+        "GITHUB_TOKEN": "ghp_ZP7f4t30KXxV9fWUj4oUO77085VZv2gYKU7L"
+      }
+    },
+    "openstreetmap": {
+      "command": "uvx",
+      "args": [
+        "osm-mcp-server"
+      ],
+      "env": {
+        "PATH": "/Users/marconadas/.local/bin:$PATH"
+      }
+    },
+    "gis-dataconversion-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "gis-dataconversion-mcp"
+      ]
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem"
+      ]
+    },
+    "memory": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ]
+    },
+    "everything": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-everything"
+      ]
+    },
+    "postgres": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@henkey/postgres-mcp-server",
+        "--connection-string",
+        "postgresql://localhost:5432/bgapp"
+      ]
+    },
+    "puppeteer-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "puppeteer-mcp-server"
+      ]
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-filesystem"],
+      "env": {}
+    },
+    "github": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "ghp_ZP7f4t30KXxV9fWUj4oUO77085VZv2gYKU7L"
+      }
+    },
+    "cloudflare": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@cloudflare/mcp-server-cloudflare@latest", "run"],
+      "env": {
+        "CLOUDFLARE_API_TOKEN": "F31omHgQku19VAG52njqV9T5TZ2CEeMFjfnlPeEZ",
+        "CLOUDFLARE_ACCOUNT_ID": "b4824e9393a0448cbc14367facb73053"
+      }
+    },
+    "browsermcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["@browsermcp/mcp@latest"],
+      "env": {}
+    },
+    "firecrawl": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["firecrawl-mcp"],
+      "env": {
+        "FIRECRAWL_API_KEY": "fc-3c7338d240e54066a1d57b317c1afa0b"
+      }
+    },
+    "playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"],
+      "env": {}
+    },
+    "memory": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-memory"],
+      "env": {}
+    },
+    "sequential-thinking": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["@modelcontextprotocol/server-sequential-thinking"],
+      "env": {}
+    },
+    "puppeteer": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["puppeteer-mcp-server"],
+      "env": {}
+    },
+    "gis-dataconversion": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["gis-dataconversion-mcp"],
+      "env": {}
+    },
+    "openstreetmap": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["osm-mcp-server"],
+      "env": {}
+    },
+    "igniter": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@igniter-js/mcp-server@latest"],
+      "env": {
+        "GITHUB_TOKEN": "ghp_ZP7f4t30KXxV9fWUj4oUO77085VZv2gYKU7L"
+      }
+    },
+    "spec-kit": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "/Users/marconadas/documents/code/spec-kit/mcp-server.js"
+      ],
+      "env": {
+        "GITHUB_TOKEN": "ghp_ZP7f4t30KXxV9fWUj4oUO77085VZv2gYKU7L"
+      }
+    }
+  }
+}

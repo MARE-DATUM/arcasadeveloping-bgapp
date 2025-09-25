@@ -1,0 +1,238 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "@modelcontextprotocol/server-filesystem"
+      ],
+      "env": {}
+    },
+    "github": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "ghp_ZP7f4t30KXxV9fWUj4oUO77085VZv2gYKU7L"
+      }
+    },
+    "browsermcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "@browsermcp/mcp@latest"
+      ],
+      "env": {}
+    },
+    "firecrawl": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "firecrawl-mcp"
+      ],
+      "env": {
+        "FIRECRAWL_API_KEY": "fc-3c7338d240e54066a1d57b317c1afa0b"
+      }
+    },
+    "playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ],
+      "env": {}
+    },
+    "shadcn": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "shadcn@latest",
+        "mcp"
+      ],
+      "env": {}
+    },
+    "memory": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "@modelcontextprotocol/server-memory"
+      ],
+      "env": {}
+    },
+    "sequential-thinking": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "env": {}
+    },
+    "everything": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "@modelcontextprotocol/server-everything"
+      ],
+      "env": {}
+    },
+    "puppeteer": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "puppeteer-mcp-server"
+      ],
+      "env": {}
+    },
+    "igniter": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@igniter-js/mcp-server@latest"
+      ],
+      "env": {
+        "GITHUB_TOKEN": "ghp_ZP7f4t30KXxV9fWUj4oUO77085VZv2gYKU7L"
+      }
+    },
+    "gis-dataconversion": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "gis-dataconversion-mcp"
+      ],
+      "env": {}
+    },
+    "openstreetmap": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "osm-mcp-server"
+      ],
+      "env": {}
+    },
+    "spec-kit": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "/Users/marconadas/documents/code/spec-kit/mcp-server.js"
+      ],
+      "env": {
+        "GITHUB_TOKEN": "ghp_ZP7f4t30KXxV9fWUj4oUO77085VZv2gYKU7L"
+      }
+    },
+    "cloudflare-docs": {
+      "type": "sse",
+      "url": "https://docs.mcp.cloudflare.com/sse",
+      "headers": {
+        "Authorization": "Bearer ${CLOUDFLARE_API_TOKEN}",
+        "X-Account-ID": "b4824e9393a0448cbc14367facb73053"
+      }
+    },
+    "cloudflare-kv": {
+      "type": "sse",
+      "url": "https://kv.mcp.cloudflare.com/sse",
+      "headers": {
+        "Authorization": "Bearer ${CLOUDFLARE_API_TOKEN}",
+        "X-Account-ID": "b4824e9393a0448cbc14367facb73053"
+      }
+    },
+    "cloudflare-d1": {
+      "type": "sse",
+      "url": "https://d1.mcp.cloudflare.com/sse",
+      "headers": {
+        "Authorization": "Bearer ${CLOUDFLARE_API_TOKEN}",
+        "X-Account-ID": "b4824e9393a0448cbc14367facb73053"
+      }
+    },
+    "cloudflare-r2": {
+      "type": "sse",
+      "url": "https://r2.mcp.cloudflare.com/sse",
+      "headers": {
+        "Authorization": "Bearer ${CLOUDFLARE_API_TOKEN}",
+        "X-Account-ID": "b4824e9393a0448cbc14367facb73053"
+      }
+    },
+    "cloudflare-queues": {
+      "type": "sse",
+      "url": "https://queues.mcp.cloudflare.com/sse",
+      "headers": {
+        "Authorization": "Bearer ${CLOUDFLARE_API_TOKEN}",
+        "X-Account-ID": "b4824e9393a0448cbc14367facb73053"
+      }
+    },
+    "cloudflare-durable-objects": {
+      "type": "sse",
+      "url": "https://durable-objects.mcp.cloudflare.com/sse",
+      "headers": {
+        "Authorization": "Bearer ${CLOUDFLARE_API_TOKEN}",
+        "X-Account-ID": "b4824e9393a0448cbc14367facb73053"
+      }
+    },
+    "cloudflare-analytics": {
+      "type": "sse",
+      "url": "https://analytics.mcp.cloudflare.com/sse",
+      "headers": {
+        "Authorization": "Bearer ${CLOUDFLARE_API_TOKEN}",
+        "X-Account-ID": "b4824e9393a0448cbc14367facb73053"
+      }
+    },
+    "cloudflare-logs": {
+      "type": "sse",
+      "url": "https://logs.mcp.cloudflare.com/sse",
+      "headers": {
+        "Authorization": "Bearer ${CLOUDFLARE_API_TOKEN}",
+        "X-Account-ID": "b4824e9393a0448cbc14367facb73053"
+      }
+    },
+    "cloudflare-radar": {
+      "type": "sse",
+      "url": "https://radar.mcp.cloudflare.com/sse",
+      "headers": {
+        "Authorization": "Bearer ${CLOUDFLARE_API_TOKEN}",
+        "X-Account-ID": "b4824e9393a0448cbc14367facb73053"
+      }
+    },
+    "cloudflare-browser-rendering": {
+      "type": "sse",
+      "url": "https://browser-rendering.mcp.cloudflare.com/sse",
+      "headers": {
+        "Authorization": "Bearer ${CLOUDFLARE_API_TOKEN}",
+        "X-Account-ID": "b4824e9393a0448cbc14367facb73053"
+      }
+    },
+    "cloudflare-ai": {
+      "type": "sse",
+      "url": "https://ai.mcp.cloudflare.com/sse",
+      "headers": {
+        "Authorization": "Bearer ${CLOUDFLARE_API_TOKEN}",
+        "X-Account-ID": "b4824e9393a0448cbc14367facb73053"
+      }
+    },
+    "cloudflare-vectorize": {
+      "type": "sse",
+      "url": "https://vectorize.mcp.cloudflare.com/sse",
+      "headers": {
+        "Authorization": "Bearer ${CLOUDFLARE_API_TOKEN}",
+        "X-Account-ID": "b4824e9393a0448cbc14367facb73053"
+      }
+    },
+    "cloudflare-security": {
+      "type": "sse",
+      "url": "https://security.mcp.cloudflare.com/sse",
+      "headers": {
+        "Authorization": "Bearer ${CLOUDFLARE_API_TOKEN}",
+        "X-Account-ID": "b4824e9393a0448cbc14367facb73053"
+      }
+    },
+    "cloudflare-cache": {
+      "type": "sse",
+      "url": "https://cache.mcp.cloudflare.com/sse",
+      "headers": {
+        "Authorization": "Bearer ${CLOUDFLARE_API_TOKEN}",
+        "X-Account-ID": "b4824e9393a0448cbc14367facb73053"
+      }
+    }
+  }
+}
